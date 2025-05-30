@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Адмінка Блогу</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="home-icon">🏠</div>
+    <div class="menu">
+        <a href="#">Posts</a>
+        <a href="#">Categories</a>
+        <a href="#">Feedbacks</a>
+    </div>
+
+    <div class="header">Адмінка Блогу</div>
+
+    <div class="container">
+        <button class="toggle-theme">Змінити тему</button>
+        <h2>Пости</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Заголовок</th>
+                    <th>Категорія</th>
+                    <th>Дата</th>
+                    <th>Дії</th>
+                </tr>
+            </thead>
+            <tbody id="posts-container"></tbody>
+        </table>
+        <button onclick="window.location.href='create.html'" class="btn">Новий пост</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Створення Посту</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container create-container">
+        <h2>Створити новий пост</h2>
+        <form id="post-form">
+            <label for="title">Заголовок:</label>
+            <input type="text" id="title" required />
+
+            <label for="text">Текст:</label>
+            <textarea id="text" rows="5" required></textarea>
+
+            <label>Категорія:</label>
+            <div class="category-group">
+                <label><input type="radio" name="category" value="Наука" required /> Наука</label>
+                <label><input type="radio" name="category" value="Поезія" /> Поезія</label>
+                <label><input type="radio" name="category" value="Мистецтво" /> Мистецтво</label>
+            </div>
+
+            <label for="language">Мова:</label>
+            <select id="language">
+                <option value="en">Англійська</option>
+                <option value="uk">Українська</option>
+                <option value="ru">Російська</option>
+            </select>
+
+            <label for="image">Зображення:</label>
+            <input type="file" id="image" accept="image/*" />
+
+            <div>
+                <label><input type="checkbox" id="theme-toggle" /> Увімкнути темну тему</label>
+            </div>
+
+            <div>
+                <label><input type="checkbox" id="visible" /> Видимий на сайті</label>
+            </div>
+
+            <div class="btn-group">
+                <button type="submit" class="btn btn-primary">Створити пост</button>
+                <button type="button" class="btn btn-secondary" onclick="window.location.href='index.html'">Скасувати</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="create.js"></script>
+</body>
+</html>
+
